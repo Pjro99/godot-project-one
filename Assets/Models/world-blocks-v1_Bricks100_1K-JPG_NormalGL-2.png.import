@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cw5wc7vicol61"
+path.s3tc="res://.godot/imported/world-blocks-v1_Bricks100_1K-JPG_NormalGL-2.png-63d6e32747e82443b4b5e76ad7fe072b.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "669c878a75b9e6722f3227578e944367"
+}
+
+[deps]
+
+source_file="res://Assets/Models/world-blocks-v1_Bricks100_1K-JPG_NormalGL-2.png"
+dest_files=["res://.godot/imported/world-blocks-v1_Bricks100_1K-JPG_NormalGL-2.png-63d6e32747e82443b4b5e76ad7fe072b.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://Assets/Models/world-blocks-v1_Bricks100_1K-JPG_NormalGL-2.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

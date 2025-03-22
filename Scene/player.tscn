@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://dkq3dtlkdmmyt"]
+
+[ext_resource type="Script" uid="uid://bre8ux02dpvm2" path="res://Scripts/player.gd" id="1_kelma"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kelma"]
+albedo_color = Color(0.0784, 0.49, 0.27734, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_j47wa"]
+material = SubResource("StandardMaterial3D_kelma")
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_kelma"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kelma"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_kelma")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_j47wa")
+
+[node name="Face" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(0.678582, 0, 0.0176483, 0.0143683, -3.23034e-09, -0.833491, 6.28058e-10, 0.0739016, -3.6433e-08, 1.95936e-18, 0.259918, -0.573961)
+mesh = SubResource("CylinderMesh_kelma")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_kelma")
+
+[node name="Camera_Controller" type="Node3D" parent="."]
+top_level = true
+
+[node name="Camera_Target" type="Node3D" parent="Camera_Controller"]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, -0.176795, 2.34918, 5.9545)
+
+[node name="Camera3D" type="Camera3D" parent="Camera_Controller/Camera_Target"]
+transform = Transform3D(1, 0, 0, 0, 0.997963, 0.0638008, 0, -0.0638008, 0.997963, 0.164091, 0, 0)
+current = true
